@@ -1,0 +1,49 @@
+GA7-220501096-AA5-EV04
+ENDPOINTS - API DEL PROYECTO DE INVENTARIO
+Aprendiz: Emma Alvarez
+
+BASE URL:
+http://localhost:3000
+
+AUTENTICACIÓN
+POST /api/registro
+POST /api/login
+
+PRODUCTOS
+GET    /api/productos
+GET    /api/productos/:id
+POST   /api/productos
+PUT    /api/productos/:id
+DELETE /api/productos/:id
+
+INVENTARIO
+POST /api/inventario/entrada
+POST /api/inventario/salida
+GET  /api/movimientos
+GET  /api/inventario/resumen
+
+EJEMPLO CREAR PRODUCTO:
+POST http://localhost:3000/api/productos
+{
+  "nombre": "Arroz 500g",
+  "categoria": "Granos",
+  "precio": 2500,
+  "stockMinimo": 5,
+  "stock": 20
+}
+
+EJEMPLO ENTRADA:
+POST http://localhost:3000/api/inventario/entrada
+{
+  "productoId": 1,
+  "cantidad": 10,
+  "observacion": "Compra al proveedor"
+}
+
+EJEMPLO SALIDA:
+POST http://localhost:3000/api/inventario/salida
+{
+  "productoId": 1,
+  "cantidad": 3,
+  "observacion": "Venta"
+}

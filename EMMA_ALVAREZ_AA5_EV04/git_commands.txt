@@ -1,0 +1,10 @@
+COMANDOS DE VERSIONAMIENTO
+
+git init
+git add .
+git commit -m "GA7-220501096-AA5-EV04 testing API inventario"
+git branch -M main
+git remote add origin https://github.com/USUARIO/EMMA_ALVAREZ_AA5_EV04.git
+git push -u origin main
+
+Después de crear el repositorio, colocar la URL real en repositorio.txt.

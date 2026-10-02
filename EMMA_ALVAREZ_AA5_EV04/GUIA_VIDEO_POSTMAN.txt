@@ -1,0 +1,50 @@
+GUION PARA EL VIDEO - GA7-220501096-AA5-EV04
+
+Duración sugerida: 5 a 8 minutos.
+
+1. Presentación
+   - "Mi nombre es Emma Alvarez."
+   - "Esta es la evidencia GA7-220501096-AA5-EV04."
+   - "Voy a realizar el testing de las API de mi proyecto de inventario usando Postman."
+
+2. Mostrar el proyecto
+   - Mostrar brevemente la carpeta.
+   - Mostrar src/server.js.
+   - Explicar que el proyecto administra productos y existencias.
+
+3. Ejecutar API
+   - Abrir terminal.
+   - Ejecutar npm install si es necesario.
+   - Ejecutar npm start.
+   - Mostrar http://localhost:3000.
+
+4. Postman
+   - Importar postman_collection_GA7_AA5_EV04.json.
+   - Mostrar las 11 pruebas.
+
+5. Ejecutar pruebas
+   - P01 Estado API.
+   - P02 Registro.
+   - P03 Login.
+   - P04 Crear producto.
+   - P05 Listar productos.
+   - P06 Consultar producto.
+   - P07 Entrada.
+   - P08 Salida.
+   - P09 Movimientos.
+   - P10 Resumen.
+   - P11 Intento de salida con stock insuficiente.
+
+6. Collection Runner
+   - Ejecutar la colección.
+   - Mostrar los tests aprobados.
+
+7. Endpoints
+   - Mostrar ENDPOINTS.txt.
+
+8. Cierre
+   - Mostrar repositorio.
+   - Indicar que las API fueron probadas en Postman.
+
+IMPORTANTE:
+El video debe ser grabado por el aprendiz con Postman abierto y mostrando las pruebas reales. Este archivo funciona como guía y no reemplaza el video solicitado.

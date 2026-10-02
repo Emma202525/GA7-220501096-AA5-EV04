@@ -1,0 +1,76 @@
+{
+  "info": {
+    "name": "GA7-AA5-EV03 - Sistema Inventario",
+    "description": "Colección básica para probar los servicios de la API de inventario.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:3000"}
+  ],
+  "item": [
+    {
+      "name": "Estado API",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/"
+      }
+    },
+    {
+      "name": "Crear producto",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nombre\":\"Arroz 500g\",\"categoria\":\"Granos\",\"precio\":2500,\"stockMinimo\":5,\"stock\":20}"
+        },
+        "url": "{{baseUrl}}/api/productos"
+      }
+    },
+    {
+      "name": "Listar productos",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/productos"
+      }
+    },
+    {
+      "name": "Registrar entrada",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"productoId\":1,\"cantidad\":10,\"observacion\":\"Compra al proveedor\"}"
+        },
+        "url": "{{baseUrl}}/api/inventario/entrada"
+      }
+    },
+    {
+      "name": "Registrar salida",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"productoId\":1,\"cantidad\":3,\"observacion\":\"Venta\"}"
+        },
+        "url": "{{baseUrl}}/api/inventario/salida"
+      }
+    },
+    {
+      "name": "Resumen inventario",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/inventario/resumen"
+      }
+    },
+    {
+      "name": "Movimientos",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/movimientos"
+      }
+    }
+  ]
+}

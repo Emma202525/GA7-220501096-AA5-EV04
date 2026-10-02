@@ -1,0 +1,24 @@
+GA7-220501096-AA5-EV03
+Diseño y desarrollo de servicios web - proyecto
+
+Aprendiz: Emma Alvarez
+
+Sistema desarrollado:
+Sistema de inventario fácil y sencillo de usar para tiendas o pequeños negocios.
+
+Servicios incluidos:
+- Registro e inicio de sesión.
+- Gestión CRUD de productos.
+- Entradas de inventario.
+- Salidas de inventario.
+- Consulta de movimientos.
+- Resumen del inventario.
+
+Documentación:
+API.md
+
+Colección para pruebas:
+postman_collection.json
+
+Enlace del repositorio:
+Ver repositorio.txt

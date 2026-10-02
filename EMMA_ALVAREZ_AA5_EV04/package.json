@@ -1,0 +1,19 @@
+{
+  "name": "sistema-inventario-api",
+  "version": "1.0.0",
+  "description": "API REST sencilla para gestionar inventario de tiendas - GA7-220501096-AA5-EV03",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": ["api", "inventario", "tiendas", "rest", "sena"],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
